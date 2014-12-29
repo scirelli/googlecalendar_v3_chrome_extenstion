@@ -109,8 +109,6 @@ Examples
 
     //Events
     function testEvents(){
-        //listid: 18s4kn3fhvriai8jujb1ss2m7k@group.calendar.google.com
-        //eventid:5466160332369527 
         events.list('18s4kn3fhvriai8jujb1ss2m7k@group.calendar.google.com').then(
             function(evnts){
                 console.log(evnts);
