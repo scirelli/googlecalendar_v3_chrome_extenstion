@@ -8,7 +8,7 @@ I wasn't able to get Google's Javascript api's to work with Chrome extensions. S
 It authenticates for the person (current user) who is logged into the browser.
 
 Examples
-=========
+--------
     var calendarlist = new gcal.CalendarList(),
         calendar     = new gcal.Calendars(),
         events       = new gcal.Events();
