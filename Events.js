@@ -34,9 +34,14 @@ if( gcal === undefined ){ var gcal = {}; }
             }
         },
 
-        list:function( calId ){
+        list:function( calId, oParams ){
             var sURL     = this.sCalendarsURL + calId + '/events/',
-                deferred = Q.defer();
+                deferred = Q.defer(),
+                queryStr = gcal.encodeParams(oParams);
+
+            if( queryStr ){
+                sURL += "?" + queryStr;
+            }
 
             if( calId ){
                 this.aAll.push(
